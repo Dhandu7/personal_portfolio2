@@ -56,11 +56,12 @@ export const experiences = [
   {
     id: 2,
     company: 'Hydro One Networks',
-    role: 'Data Automation Analyst / Developer Co-op',
+    role: 'Project Controls Developer Co-op',
     location: 'Toronto, ON',
     date: 'May 2025 – Present',
     current: true,
     bullets: [
+      'Worked as a key member of the Project Controls team to automate data workflows and provide analytic solutions to allow actionable insights for project managers and executives.',
       'Automated transfer of operational data into a centralized SQL Server using optimized Python scripts interfacing with SAP and OPC systems.',
       'Led a 6-person team to design ETL workflows in Python and VBA, accelerating material quantification by 1900% and enabling future predictive analytics.',
       'Engineered automation pipelines for cost reporting, reducing manual workload by 95% using Python, VBA, and SharePoint.',
