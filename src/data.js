@@ -21,10 +21,10 @@ export const personal = {
   github: 'https://github.com/Dhandu7',
   linkedin: 'https://linkedin.com/in/aaryandhand',
   website: 'https://aaryandhand.com',
-  resume: 'public/Aaryan Dhand Resume 2026 v2.pdf',
+  resume: 'Aaryan Dhand Resume 2026 v2.pdf',
 
-  photo: '/pfp.png',
-  photo2: '/pfp2.png'
+  photo: 'pfp.png',
+  photo2: 'pfp2.png'
 }
 
 export const stats = [
@@ -119,7 +119,7 @@ export const projects = [
     stack: ['Python', 'Pygame', 'Scikit-Learn', 'Machine Learning', 'NBA API'],
     github: 'https://github.com/Dhandu7/NBA-Betting-Odds-Analyzer',
     live: 'https://youtu.be/-TC345Tr0Oo',
-    image: '/statpredictor.png', // e.g. '/projects/nba.png'
+    image: 'statpredictor.png', // e.g. '/projects/nba.png'
     emoji: '🏀',
   },
   {
@@ -130,7 +130,7 @@ export const projects = [
     stack: ['React', 'Django', 'Python', 'MySQL', 'Google Gemini', 'Postman'],
     github: 'https://github.com/Shahed-i/StyleMate',
     live: null,
-    image: '/stylemate.png',
+    image: 'stylemate.png',
     emoji: '👗',
   },
   {
@@ -141,7 +141,7 @@ export const projects = [
     stack: ['React', 'Flask', 'Python', 'DynamoDB', 'AWS', 'Google Cloud'],
     github: 'https://github.com/Dhandu7/hack-the-change-2024',
     live: 'https://www.youtube.com/watch?v=vIc-ibzZHj4',
-    image: '/pathways.png',
+    image: 'pathways.png',
     emoji: '🌍',
   },
     {
@@ -152,7 +152,7 @@ export const projects = [
     stack: ['React', 'Arduino', 'C', 'JavaScript', 'Flask', 'Docker','Python'],
     github: 'https://github.com/debodam/nathacks2023',
     live: null,
-    image: '/driveawake.png',
+    image: 'driveawake.png',
     emoji: '🌍',
   },
   // ── ADD NEW PROJECT HERE ──
