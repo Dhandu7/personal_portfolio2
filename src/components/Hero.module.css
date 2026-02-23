@@ -1,0 +1,278 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 4rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridPan 20s linear infinite;
+}
+
+@keyframes gridPan {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+
+.glow {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+  top: -100px; right: -100px;
+  pointer-events: none;
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+.glow2 {
+  position: absolute;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+  bottom: 100px; left: 10%;
+  pointer-events: none;
+  animation: glowPulse 8s ease-in-out infinite reverse;
+}
+
+@keyframes glowPulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+
+/* ── Two-column row ── */
+.heroRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* ── Left column ── */
+.content {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.tag::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.name {
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #fff 40%, rgba(0, 212, 255, 0.7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.typedLine {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 500;
+  color: var(--muted2);
+  min-height: 2.4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.typedText {
+  color: var(--accent);
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background: var(--accent);
+  animation: blink 0.8s step-end infinite;
+  flex-shrink: 0;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.desc {
+  max-width: 520px;
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-family: 'Syne', sans-serif;
+}
+
+.btnPrimary {
+  background: var(--accent);
+  color: #000;
+}
+.btnPrimary:hover {
+  background: #00b8d9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 212, 255, 0.25);
+}
+
+.btnOutline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btnOutline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.btnResume {
+  background: transparent;
+  color: var(--accent3);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+.btnResume:hover {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: var(--accent3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.15);
+}
+
+/* ── Right column: photo ── */
+.rightPanel {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoWrapper {
+  position: relative;
+  /* Change these two values when you swap to a larger photo */
+  width: 340px;
+  height: 340px;
+}
+
+.photoGlow {
+  position: absolute;
+  inset: -30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 212, 255, 0.25);
+  box-shadow:
+    0 0 0 6px rgba(0, 212, 255, 0.06),
+    0 20px 60px rgba(0, 0, 0, 0.5);
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Scroll indicator ── */
+.scrollIndicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  animation: fadeInUp 2s ease 2s both;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  animation: scrollAnim 2s ease-in-out infinite;
+}
+
+@keyframes scrollAnim {
+  0%, 100% { transform: scaleY(1); opacity: 1; }
+  50% { transform: scaleY(0.5); opacity: 0.4; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .photoWrapper { width: 280px; height: 280px; }
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 7rem 1.5rem 4rem; }
+  .heroRow {
+    flex-direction: column-reverse;  /* photo above text on mobile */
+    gap: 2.5rem;
+  }
+  .photoWrapper { width: 200px; height: 200px; }
+}

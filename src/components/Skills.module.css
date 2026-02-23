@@ -1,0 +1,60 @@
+.section {
+  padding: 7rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.group {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.group:hover {
+  border-color: rgba(0, 212, 255, 0.2);
+}
+
+.groupTitle {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.7rem;
+  background: var(--surface2);
+  color: var(--muted2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 212, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .section { padding: 5rem 1.5rem; }
+}

@@ -1,0 +1,142 @@
+.section {
+  padding: 7rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, border-color 0.3s;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+.img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+}
+
+.placeholder {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, var(--surface2) 0%, #0a1520 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.04) 0%, rgba(124, 58, 237, 0.04) 100%);
+}
+
+.placeholderEmoji {
+  font-size: 2.8rem;
+  opacity: 0.35;
+  position: relative;
+  z-index: 1;
+}
+
+.placeholderLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.placeholderLabel code {
+  color: var(--accent);
+}
+
+.body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.desc {
+  font-size: 0.875rem;
+  color: var(--muted2);
+  line-height: 1.65;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.64rem;
+  padding: 0.2rem 0.6rem;
+  background: rgba(0, 212, 255, 0.07);
+  color: var(--accent);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted2);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .section { padding: 5rem 1.5rem; }
+  .grid { grid-template-columns: 1fr; }
+}
