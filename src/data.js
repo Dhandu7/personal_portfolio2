@@ -23,8 +23,8 @@ export const personal = {
   website: 'https://aaryandhand.com',
   resume: 'public/Aaryan Dhand Resume 2026 v2.pdf',
 
-  photo: 'public/pfp.png',
-  photo2: 'public/pfp2.png'
+  photo: '/pfp.png',
+  photo2: '/pfp2.png'
 }
 
 export const stats = [
