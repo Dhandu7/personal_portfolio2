@@ -127,7 +127,7 @@ export const projects = [
     id: 2,
     name: 'StyleMate',
     description:
-      'AI-powered personalized outfit recommendation system. Built the backend with Django implementing the Google Gemini API, with a React frontend and MySQL for real-time booking functionality via SpringBoot.',
+      'AI-powered personalized outfit recommendation system. Built the backend with Django implementing the Google Gemini API, with a React frontend and MySQL for real-time saving functionality.',
     stack: ['React', 'Django', 'Python', 'MySQL', 'Google Gemini', 'Postman'],
     github: 'https://github.com/Shahed-i/StyleMate',
     live: null,
