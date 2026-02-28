@@ -112,48 +112,61 @@ export const experiences = [
 //  github & live can be null if not applicable
 // ─────────────────────────────────────────────
 export const projects = [
+export const projects = [
+    {
+    id: 2,
+    name: 'FitPic',
+    description:
+      'FitPic is a fashion accountability platform that gamifies daily outfit sharing through partner-based streaks, milestones, and an immersive 3D carousel experience. Build with React, Supabase, and Groq powered image analysis, it includes an AI dashboard that analyzes uploaded fits to surface personal style trends and wardrobe insights over time.',
+    stack: ['React', 'Vite', 'Supabase', 'Groq API', 'NBA API'],
+    github: 'https://github.com/Dhandu7/FitCheck',
+    live: 'https://fit-check-sage-one.vercel.app/',
+    image: '/fitcheck.png', // e.g. '/projects/nba.png'
+    emoji: '🏀',
+  },
   {
-    id: 1,
+    id: 3,
     name: 'NBA Betting Odds Analyzer',
     description:
       'A Python tool integrating NBA API game logs with betting market data to generate predictive features and visualize outcomes. Trains ML models to identify value bets and forecast player performance.',
     stack: ['Python', 'Pygame', 'Scikit-Learn', 'Machine Learning', 'NBA API'],
     github: 'https://github.com/Dhandu7/NBA-Betting-Odds-Analyzer',
     live: 'https://youtu.be/-TC345Tr0Oo',
-    image: 'statpredictor.png', // e.g. '/projects/nba.png'
+    image: '/statpredictor.png', // e.g. '/projects/nba.png'
     emoji: '🏀',
   },
   {
-    id: 2,
+    id: 4,
     name: 'StyleMate',
     description:
       'AI-powered personalized outfit recommendation system. Built the backend with Django implementing the Google Gemini API, with a React frontend and MySQL for real-time saving functionality.',
     stack: ['React', 'Django', 'Python', 'MySQL', 'Google Gemini', 'Postman'],
     github: 'https://github.com/Shahed-i/StyleMate',
     live: null,
-    image: 'stylemate.png',
+    image: '/stylemate.png',
     emoji: '👗',
   },
+  
   {
-    id: 3,
+    id: 5,
     name: 'Pathways',
     description:
       'A React + Flask platform supporting refugees and immigrants with resource navigation, real-time language translation, tailored job postings, and cultural/mental health resources. Built at Hack the Change 2024.',
     stack: ['React', 'Flask', 'Python', 'DynamoDB', 'AWS', 'Google Cloud'],
     github: 'https://github.com/Dhandu7/hack-the-change-2024',
     live: 'https://www.youtube.com/watch?v=vIc-ibzZHj4',
-    image: 'pathways.png',
+    image: '/pathways.png',
     emoji: '🌍',
   },
     {
-    id: 4,
+    id: 6,
     name: 'DriveAwake',
     description:
       'Committed to reshaping road safety, DriveAwake employs EOG technology seamlessly integrated into your driving experience. By continuously monitoring real-time brain activity, DriveAwake ensures unwavering focus during long journeys, making each mile safer and prioritizing your well-being on the road—because every journey matters, mile after mile.',
     stack: ['React', 'Arduino', 'C', 'JavaScript', 'Flask', 'Docker','Python'],
     github: 'https://github.com/debodam/nathacks2023',
     live: null,
-    image: 'driveawake.png',
+    image: '/driveawake.png',
     emoji: '🌍',
   },
   // ── ADD NEW PROJECT HERE ──
