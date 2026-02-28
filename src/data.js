@@ -112,7 +112,6 @@ export const experiences = [
 //  github & live can be null if not applicable
 // ─────────────────────────────────────────────
 export const projects = [
-export const projects = [
     {
     id: 2,
     name: 'FitPic',
