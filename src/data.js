@@ -42,7 +42,7 @@ export const experiences = [
   {
     id: 1,
     company: 'Vivordo Health',
-    role: 'AI & Machine Learning Engineer (Part-Time)',
+    role: 'AI & Machine Learning Engineer',
     location: 'Calgary, AB (Remote)',
     date: 'Oct 2025 – Present',
     current: true,
@@ -55,7 +55,7 @@ export const experiences = [
   {
     id: 2,
     company: 'Hydro One Networks',
-    role: 'Project Controls Developer Co-op',
+    role: 'Project Controls - Data Analyst Co-op',
     location: 'Toronto, ON',
     date: 'May 2025 – May 2026',
     current: false,
