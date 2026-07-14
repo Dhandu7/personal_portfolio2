@@ -21,7 +21,7 @@ export const personal = {
   github: 'https://github.com/Dhandu7',
   linkedin: 'https://linkedin.com/in/aaryandhand',
   website: 'https://aaryandhand.com',
-  resume: 'Aaryan Dhand Resume 2026 v2.pdf',
+  resume: 'Aaryan Dhand Resume v7.pdf',
 
   photo: 'pfp.png',
   photo2: 'pfp2.png'
