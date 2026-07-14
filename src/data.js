@@ -48,7 +48,7 @@ export const experiences = [
     current: true,
     bullets: [
       "Cut LLM response latency 57% by re-architecting the Google Gemini-powered insight layer's inference pipeline, delivering real-time interpretation of biometric signals to users in production.",
-      'Trained and shipped a multimodal stress-inference model (semi-supervised, LSTM-based) on HRV and biometric time-series data that reached 88% accuracy (0.85 macro-F1) on held-out subjects, serving real-time predictions in a live Flutter + Firebase app across commercial wearables.',
+      'Trained and shipped a multimodal stress-inference model (semi-supervised, LSTM-based) on HRV and biometric time-series data, serving real-time predictions in a live Flutter + Firebase app.',
       'Moved research prototypes into a production analytics product by deploying TensorFlow/PyTorch models behind RESTful APIs and building the data-preprocessing and model-serving infrastructure they run on.',
     ],
   },
