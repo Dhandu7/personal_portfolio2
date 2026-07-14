@@ -57,8 +57,8 @@ export const experiences = [
     company: 'Hydro One Networks',
     role: 'Project Controls Developer Co-op',
     location: 'Toronto, ON',
-    date: 'May 2025 – Present',
-    current: true,
+    date: 'May 2025 – May 2026',
+    current: false,
     bullets: [
       'Built the clean data foundation for downstream ML and predictive analytics by standing up a centralized Microsoft SQL Server warehouse that ingests SAP and OPC operational data through optimized SQL and Python pipelines.',
       'Accelerated material quantification 6x by leading a 6-person team to design scalable Python/VBA ETL workflows over 300+ historical project records, laying groundwork for forecasting and machine learning.',
