@@ -42,15 +42,14 @@ export const experiences = [
   {
     id: 1,
     company: 'Vivordo Health',
-    role: 'AI & Machine Learning Engineer',
+    role: 'AI & Machine Learning Engineer (Part-Time)',
     location: 'Calgary, AB (Remote)',
     date: 'Oct 2025 – Present',
     current: true,
     bullets: [
-      'Researching deep learning applications and physiological datasets to develop an in-house model that quantifies stress levels from biometric data.',
-      'Building and deploying TensorFlow models connected to a Flutter + Firebase app via REST APIs for real-time stress analytics.',
-      'Developing an intelligent insight layer using Google Gemini for real-time interpretation of biometric signals through prompt engineering and automated LLM-driven feedback.',
-      'Collaborating in weekly Agile sprints to deliver iterative improvements across data preprocessing, backend integration, and cloud deployment pipelines.',
+      "Cut LLM response latency 57% by re-architecting the Google Gemini-powered insight layer's inference pipeline, delivering real-time interpretation of biometric signals to users in production.",
+      'Trained and shipped a multimodal stress-inference model (semi-supervised, LSTM-based) on HRV and biometric time-series data that reached 88% accuracy (0.85 macro-F1) on held-out subjects, serving real-time predictions in a live Flutter + Firebase app across commercial wearables.',
+      'Moved research prototypes into a production analytics product by deploying TensorFlow/PyTorch models behind RESTful APIs and building the data-preprocessing and model-serving infrastructure they run on.',
     ],
   },
   {
@@ -61,11 +60,10 @@ export const experiences = [
     date: 'May 2025 – Present',
     current: true,
     bullets: [
-      'Worked as a key member of the Project Controls team to automate data workflows and provide analytic solutions to allow actionable insights for project managers and executives.',
-      'Automated transfer of operational data into a centralized SQL Server using optimized Python scripts interfacing with SAP and OPC systems.',
-      'Led a 6-person team to design ETL workflows in Python and VBA, accelerating material quantification by 1900% and enabling future predictive analytics.',
-      'Engineered automation pipelines for cost reporting, reducing manual workload by 95% using Python, VBA, and SharePoint.',
-      'Deployed interactive Power BI dashboards linked to live SAP data for executive reporting, improving project visibility and decision-making.',
+      'Built the clean data foundation for downstream ML and predictive analytics by standing up a centralized Microsoft SQL Server warehouse that ingests SAP and OPC operational data through optimized SQL and Python pipelines.',
+      'Accelerated material quantification 6x by leading a 6-person team to design scalable Python/VBA ETL workflows over 300+ historical project records, laying groundwork for forecasting and machine learning.',
+      'Cut manual reporting workload 95% by engineering end-to-end automation across SharePoint, SAP, Excel VBA, and Python for baseline and month-end cost reporting.',
+      'Deployed interactive Power BI dashboards wired to live SAP data via custom Python and Power Query pipelines, giving engineering and project leaders real-time cost and inventory visibility.',
     ],
   },
   {
@@ -112,6 +110,17 @@ export const experiences = [
 //  github & live can be null if not applicable
 // ─────────────────────────────────────────────
 export const projects = [
+  {
+    id: 1,
+    name: 'SCENR',
+    description:
+      "SCENR turns the scattered camera rolls of a group trip into polished, platform-ready social reels in about two minutes, no editing skill required. I'm building the AI core: a CLIP-based theme-matching engine that scores everyone's media against per-theme visual \"fingerprints\" using vector search (pgvector), and a deterministic reel-generation pipeline that ranks the best clips, beat-syncs cuts to music with librosa, and renders themed edits with FFmpeg on an async GPU queue. (In progress.)",
+    stack: ['Python', 'PyTorch', 'CLIP', 'pgvector', 'FFmpeg', 'librosa', 'PostgreSQL', 'Supabase', 'React'],
+    github: null, // TODO: add repo link when public
+    live: null,   // TODO: add demo link when available
+    image: '/scenr.png', // TODO: drop image in /public/
+    emoji: '🎬',
+  },
     {
     id: 2,
     name: 'FitPic',
@@ -145,7 +154,7 @@ export const projects = [
     image: '/stylemate.png',
     emoji: '👗',
   },
-  
+
   {
     id: 5,
     name: 'Pathways',
