@@ -7,10 +7,8 @@ export const personal = {
   name: 'Aaryan Dhand',
   tagline: 'Software Engineering Student',
   typedPhrases: [
-    'Software Engineer.',
     'ML & AI Developer.',
     'Data Automation Expert.',
-    'Full Stack Builder.',
     'Artist at Heart :)',
   ],
   description:
